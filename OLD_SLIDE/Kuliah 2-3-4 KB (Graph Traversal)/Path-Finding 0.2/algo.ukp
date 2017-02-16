@@ -1,0 +1,14 @@
+s.createStack()
+DFS(V:StartVertex, Z:EndVertex)
+	mark V as visited.
+	s.push(V).
+	if (V==Z)
+		return s.elements()
+	for(each vertex U adjacent to V)
+		if(!visited(U))
+			DFS(U,Z).
+			s.pop.
+		end if.
+	end for.
+	return path not found.
+End.

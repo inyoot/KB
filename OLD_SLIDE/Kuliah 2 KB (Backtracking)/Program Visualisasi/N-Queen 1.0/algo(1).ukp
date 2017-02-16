@@ -1,0 +1,16 @@
+map initialization
+bool solve(int posx, int posy, int level){
+	if (level >= map width * map height)
+		return true;
+	else{
+		map[posx][posy] = 1;
+		next_y = 1;
+		while(next_y<=map height && result == false){
+			next_y++;
+			if(map[posx+1][next_y]=0 && allowed){
+				result = solve(posx+1,next_y,level+1);
+			}
+		}
+		return false;
+	}
+}

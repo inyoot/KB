@@ -1,0 +1,23 @@
+bool explore(int country, int color) {	
+	if (country >= N_Country) 
+		return true;
+	if (okToColor(country, color)) {
+		mapColors[country] = color;
+		for (int i = 1; i <= N_Color; i++) {
+			if (explore(country + 1, i))
+				return true;
+		}
+	}
+	return false;
+}
+bool okToColor(int country, int color) {
+	int ithAdjCountry;	
+	for (int i = 0; i < N_Color; i++) {
+		if(map[country][i] != -1){
+			ithAdjCountry = map[country][i];
+			if (mapColors[ithAdjCountry] == color)
+				return false;
+		}
+	}
+	return true;
+}

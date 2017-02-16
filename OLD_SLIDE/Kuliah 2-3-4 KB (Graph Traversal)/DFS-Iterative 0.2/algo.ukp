@@ -1,0 +1,13 @@
+s.Createtack.
+s.push(V).
+mark V as visited.
+while(!s.IsEmpty) do
+	V = s.Top.
+	if no unvisited vertex adjacent to V
+		s.pop.
+	else
+		select unvisited vertex U adjacent to V.
+		s.push(U).
+		mark U as visited.
+	end if
+end while

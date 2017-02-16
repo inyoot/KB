@@ -1,0 +1,14 @@
+initiate;
+void backtracking (int row, int col){
+	if(current_position == finish)
+		return true;
+	else if(current position in maze's range){
+		if(maze[col,row] != block && not_used){
+			for(direction=1;direction<=4;direction++){
+				maze[col,row] = used;
+				backtracking (row + direction_row, col + direction_col);
+				maze[col,row] = not used;
+			}
+		}
+	}
+}

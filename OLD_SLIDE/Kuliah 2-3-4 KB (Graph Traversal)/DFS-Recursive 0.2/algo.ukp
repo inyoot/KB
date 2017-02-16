@@ -1,0 +1,6 @@
+DFS(V: Vertex)
+	mark V as visited.
+	for(each vertex U adjacent to V)
+		if(!visited(U))
+			DFS(U).
+End.

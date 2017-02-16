@@ -1,0 +1,7 @@
+start at any vertex (root)
+mark root as visited
+while (there are still unvisited vertices) do
+	find the least-cost edge (V,U) from a visited vertex V to some unvisited vertex U
+	mark edge (V,U) as MST edge  
+	mark U as visited
+end while

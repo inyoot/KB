@@ -1,0 +1,12 @@
+q.CreateQueue.
+q.enqueue(V).
+mark V as visited
+while(!q.IsEmpty) do
+	q.dequeue(V).
+	for each U adjacent to V
+		if(!visited(U))
+			q.engueue(U).
+			mark U as visited
+		end if
+	end for
+end while
